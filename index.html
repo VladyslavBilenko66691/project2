@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Vladyslav Bilenko</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1f2937, #111827);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .cv-container {
+            background: white;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+
+        .left {
+            background: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3b82f6;
+            margin-bottom: 20px;
+        }
+
+        .left h1 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        .section-title {
+            margin-top: 25px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #3b82f6;
+            text-transform: uppercase;
+        }
+
+        .right {
+            padding: 40px;
+        }
+
+        .right h2 {
+            color: #1f2937;
+            margin-bottom: 10px;
+        }
+
+        .right p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .job {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .cv-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    <div class="left">
+        <img src="photo.jpg" alt="Zdjęcie profilowe">
+        <h1>Vladyslav Bilenko</h1>
+        <p>Warszawa</p>
+        <p>📞 +48 572 095 127</p>
+        <p>✉️ bilenkovlad222@gmail.com</p>
+
+        <div class="section-title">Umiejętności</div>
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>Python</p>
+        <p>MS Office</p>
+
+        <div class="section-title">Języki</div>
+        <p>Angielski – B2</p>
+        <p>Polski – B2</p>
+        <p>Rosyjski – ojczysty</p>
+        <p>Ukraiński – ojczysty</p>
+    </div>
+
+    <div class="right">
+        <h2>Profil zawodowy</h2>
+        <p>
+            Student informatyki z doświadczeniem w tworzeniu stron internetowych 
+            oraz podstaw programowania w Pythonie. Zmotywowany do rozwoju w 
+            obszarze web developmentu i technologii IT. Szybko uczę się nowych 
+            technologii i dobrze pracuję w zespole.
+        </p>
+
+        <h2>Wykształcenie</h2>
+        <p>
+            <strong>Akademia Finansów i Biznesu Vistula</strong><br>
+            Kierunek: Informatyka<br>
+            2022 – obecnie (3 rok studiów)
+        </p>
+
+        <h2>Doświadczenie zawodowe</h2>
+
+        <div class="job">
+            <strong>Junior Web Developer (praktyki)</strong><br>
+            IT Solutions Sp. z o.o., Warszawa<br>
+            2023 – 2024
+            <ul>
+                <li>Tworzenie i edycja stron internetowych w HTML i CSS</li>
+                <li>Optymalizacja responsywności stron</li>
+                <li>Współpraca z zespołem programistów</li>
+                <li>Testowanie i poprawa błędów</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <strong>Specjalista ds. wsparcia IT</strong><br>
+            TechSupport Polska, Warszawa<br>
+            2022 – 2023
+            <ul>
+                <li>Wsparcie techniczne użytkowników</li>
+                <li>Konfiguracja sprzętu komputerowego</li>
+                <li>Instalacja oprogramowania</li>
+                <li>Rozwiązywanie problemów systemowych</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
