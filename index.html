@@ -30,14 +30,14 @@
             grid-template-columns: 300px 1fr;
         }
 
-        .left {
+        aside {
             background: #1f2937;
             color: white;
             padding: 30px;
             text-align: center;
         }
 
-        .left img {
+        aside img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
@@ -46,12 +46,12 @@
             margin-bottom: 20px;
         }
 
-        .left h1 {
+        aside h1 {
             font-size: 22px;
             margin-bottom: 10px;
         }
 
-        .left p {
+        aside p {
             font-size: 14px;
             margin: 5px 0;
         }
@@ -64,16 +64,16 @@
             text-transform: uppercase;
         }
 
-        .right {
+        main {
             padding: 40px;
         }
 
-        .right h2 {
+        h2 {
             color: #1f2937;
             margin-bottom: 10px;
         }
 
-        .right p {
+        p {
             margin-bottom: 15px;
             line-height: 1.6;
             color: #444;
@@ -88,7 +88,7 @@
             margin-bottom: 6px;
         }
 
-        .job {
+        article {
             margin-bottom: 20px;
         }
 
@@ -102,69 +102,92 @@
 <body>
 
 <div class="cv-container">
-    <div class="left">
+    <aside>
         <img src="photo.jpg" alt="Zdjęcie profilowe">
         <h1>Vladyslav Bilenko</h1>
         <p>Warszawa</p>
-        <p>📞 +48 572 095 127</p>
-        <p>✉️ bilenkovlad222@gmail.com</p>
+        <p>📞 <a href="tel:+48572095127" style="color:white;">+48 572 095 127</a></p>
+        <p>✉️ <a href="mailto:bilenkovlad222@gmail.com" style="color:white;">bilenkovlad222@gmail.com</a></p>
 
         <div class="section-title">Umiejętności</div>
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>Python</p>
-        <p>MS Office</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Python</li>
+            <li>MS Office</li>
+            <li>JavaScript</li>
+        </ul>
 
         <div class="section-title">Języki</div>
-        <p>Angielski – B2</p>
-        <p>Polski – B2</p>
-        <p>Rosyjski – ojczysty</p>
-        <p>Ukraiński – ojczysty</p>
-    </div>
+        <ul>
+            <li>Angielski – B2</li>
+            <li>Polski – B2</li>
+            <li>Rosyjski – ojczysty</li>
+            <li>Ukraiński – ojczysty</li>
+        </ul>
 
-    <div class="right">
-        <h2>Profil zawodowy</h2>
-        <p>
-            Student informatyki z doświadczeniem w tworzeniu stron internetowych 
-            oraz podstaw programowania w Pythonie. Zmotywowany do rozwoju w 
-            obszarze web developmentu i technologii IT. Szybko uczę się nowych 
-            technologii i dobrze pracuję w zespole.
-        </p>
+        <div class="section-title">Kontakt zewnętrzny</div>
+        <ul>
+            <li><a href="https://github.com/VladyslavBilenko66691" target="_blank" rel="noopener noreferrer" style="color:white;">GitHub</a></li>
+        </ul>
+    </aside>
 
-        <h2>Wykształcenie</h2>
-        <p>
-            <strong>Akademia Finansów i Biznesu Vistula</strong><br>
-            Kierunek: Informatyka<br>
-            2022 – obecnie (3 rok studiów)
-        </p>
+    <main>
+        <section>
+            <h2>O mnie</h2>
+            <p>
+                Student informatyki z doświadczeniem w tworzeniu stron internetowych 
+                oraz podstaw programowania w Pythonie. Zmotywowany do rozwoju w 
+                obszarze web developmentu i technologii IT. Szybko uczę się nowych 
+                technologii i dobrze pracuję w zespole.
+            </p>
+        </section>
 
-        <h2>Doświadczenie zawodowe</h2>
+        <section>
+            <h2>Doświadczenie</h2>
 
-        <div class="job">
-            <strong>Junior Web Developer (praktyki)</strong><br>
-            IT Solutions Sp. z o.o., Warszawa<br>
-            2023 – 2024
+            <article>
+                <strong>Junior Web Developer (praktyki)</strong><br>
+                IT Solutions Sp. z o.o., Warszawa<br>
+                2023 – 2024
+                <ul>
+                    <li>Tworzenie i edycja stron internetowych w HTML i CSS</li>
+                    <li>Optymalizacja responsywności stron</li>
+                    <li>Współpraca z zespołem programistów</li>
+                    <li>Testowanie i poprawa błędów</li>
+                </ul>
+            </article>
+
+            <article>
+                <strong>Specjalista ds. wsparcia IT</strong><br>
+                TechSupport Polska, Warszawa<br>
+                2022 – 2023
+                <ul>
+                    <li>Wsparcie techniczne użytkowników</li>
+                    <li>Konfiguracja sprzętu komputerowego</li>
+                    <li>Instalacja oprogramowania</li>
+                    <li>Rozwiązywanie problemów systemowych</li>
+                </ul>
+            </article>
+        </section>
+
+        <section>
+            <h2>Wykształcenie</h2>
+            <p>
+                <strong>Akademia Finansów i Biznesu Vistula</strong><br>
+                Kierunek: Informatyka<br>
+                2022 – obecnie (3 rok studiów)
+            </p>
+        </section>
+
+        <section>
+            <h2>Projekty</h2>
             <ul>
-                <li>Tworzenie i edycja stron internetowych w HTML i CSS</li>
-                <li>Optymalizacja responsywności stron</li>
-                <li>Współpraca z zespołem programistów</li>
-                <li>Testowanie i poprawa błędów</li>
+                <li>Strona portfolio w HTML/CSS – projekt osobisty</li>
+                <li>Prosty blog w Python + Flask – projekt studencki</li>
             </ul>
-        </div>
-
-        <div class="job">
-            <strong>Specjalista ds. wsparcia IT</strong><br>
-            TechSupport Polska, Warszawa<br>
-            2022 – 2023
-            <ul>
-                <li>Wsparcie techniczne użytkowników</li>
-                <li>Konfiguracja sprzętu komputerowego</li>
-                <li>Instalacja oprogramowania</li>
-                <li>Rozwiązywanie problemów systemowych</li>
-            </ul>
-        </div>
-
-    </div>
+        </section>
+    </main>
 </div>
 
 </body>
